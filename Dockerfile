@@ -1,4 +1,2 @@
-FROM docker/whalesay:latest
+FROM dockersamples/static-site
 ENV AUTHOR="mocchi"
-RUN apt-get -y update && apt-get install -y fortunes
-CMD /usr/games/fortune | cowsay
